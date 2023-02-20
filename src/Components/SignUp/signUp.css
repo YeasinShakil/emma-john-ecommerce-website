@@ -1,0 +1,7 @@
+.signUp-fromContainer{
+    width: 500px;
+    height: fit-content;
+}
+.error_message{
+    color: red;
+}

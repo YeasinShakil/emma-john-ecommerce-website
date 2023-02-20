@@ -1,0 +1,98 @@
+.form-container{
+    width: 500px;
+    height: fit-content;
+    color: rgb(102, 102, 102);
+    margin: 20px auto;
+    padding: 20px 35px;
+    text-align: center;
+    font-weight: 100;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 20px black;
+}
+.form-title{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-group{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+}
+.input-group label{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.input-group input{
+    width: 410px;
+    font-size: 17px;
+    height: 25px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.submit_button{
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    width: 100%;
+}
+.input-group button:hover{
+    box-shadow: 3px 2px 5px gray;
+    background-color: rgb(235, 67, 5);
+}
+.form-container p{
+    padding-top: 10px;
+}
+.form-container p a{
+    text-decoration: none;
+    color: orangered;
+}
+.googleLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    padding: 10px 0;
+    font-size: 17px;
+    margin-top: 50px ;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.googleLogin img{
+    width: 30px;
+    object-fit: cover;
+}
+.googleLogin p{
+    padding-bottom: 10px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.line1{
+    background-color: orangered;
+    height: 2px;
+    width:110px;
+}
