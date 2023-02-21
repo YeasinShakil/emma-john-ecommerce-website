@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase';
 import './login.css'
 
@@ -12,6 +12,8 @@ const Login = () => {
     // const [error, setError] = useState('');
     const [signInWithEmailAndPassword, user] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle] = useSignInWithGoogle(auth);
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
 
     const naviget = useNavigate();
 
@@ -24,7 +26,7 @@ const Login = () => {
     }
 
     if (user) {
-        naviget('/')
+        naviget(from, {replace: true})
     }
 
     const handleSignIn = (event) => {

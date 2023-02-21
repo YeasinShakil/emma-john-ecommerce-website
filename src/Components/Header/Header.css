@@ -19,3 +19,16 @@
 .nav a:hover{
     color: orangered;
 }
+.logoutBtn{
+    border: none;
+    background: none;
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    margin-left: 37px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+.logoutBtn:hover{
+    color: orangered;
+}

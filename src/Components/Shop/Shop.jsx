@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import useProducts from '../../Hooks/UseProducts';
 import { addToDb, getStoredCart } from '../../utilities/FakeDb';
 import Cart from '../Cart/Cart';
@@ -8,6 +8,7 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useProducts();
     const [cart, setCart] = useState([]);
+    const navigate = useNavigate();
 
     // Geting item from local storage
     useEffect(() => {
@@ -56,7 +57,7 @@ const Shop = () => {
                 }
             </div>
             <div className='cart-container'>
-                <Cart cart={cart}><Link to='/orders'><button>Order Review</button></Link></Cart>
+                <Cart cart={cart}><button className='order-review-btn' onClick={()=> navigate('/orders')}>Order Review</button></Cart>
             </div>
         </div>
     );
